@@ -1,46 +1,71 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>{{ page.title }}</title>
-        <meta name="viewport" content="width=device-width">
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>{{ page.title }}</title>
+    <meta name="viewport" content="width=device-width">
 
-        <!-- syntax highlighting CSS -->
-        <link rel="stylesheet" href="/css/syntax.css">
-
-        <!-- Custom CSS -->
-        <link rel="stylesheet" href="/css/main.css">
-
-    </head>
-    <body>
-
-        <div class="container">
-          <div class="site">
-            <div class="header">
-              <h1 class="title"><a href="/">{{ site.name }}</a></h1>
-              <a class="extra" href="/">home</a>
-            </div>
-
-                {{ content }}
-
-            <div class="footer">
-              <div class="contact">
-                <p>
-                  Your Name<br />
-                  What You Are<br />
-                  your@email.com
-                </p>
-              </div>
-              <div class="contact">
-                <p>
-                  <a href="http://github.com/yourusername/">github.com/yourusername</a><br />
-                  <a href="http://twitter.com/yourusername/">twitter.com/yourusername</a><br />
-                </p>
-              </div>
-            </div>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/bootstrap-responsive.min.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <script type="text/javascript" src="/javascripts/jquery.min.js"></script>
+    <script type="text/javascript" src="/javascripts/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div class="header">
+      <div class="container">
+        <h1 class="title logo"><a href="/">
+            <img class="logo" src="/images/ExtraCrispy-logo.png" alt="extra crispy improv comedy troupe" />
+          </a>
+          <div class="fineprint">
+            ( improv comedy troupe )
           </div>
-        </div> <!-- /container -->
+        </h1>
 
-    </body>
+        <div class="links">
+          <ul>
+            <li>
+              <a href="https://vimeo.com/channels/extracrispy">Videos</a>
+            </li>
+            <li>
+              <a href="http://www.youtube.com/user/ExtraCrispyImprov">More Videos</a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/extracrispyimprovcomedy">Facebook</a>
+            </li>
+            <li>
+              <a href="https://twitter.com/CrispyImprov">Twitter</a>
+            </li>
+            <li>
+              <a href="https://www.google.com/calendar/embed?src=8aar60qsr3b309q3jgkgunfuc4%40group.calendar.google.com">Calendar</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- ical: https://www.google.com/calendar/ical/8aar60qsr3b309q3jgkgunfuc4%40group.calendar.google.com/public/basic.ics
+        -->
+
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="site">
+
+            {{ content }}
+
+        <div class="footer">
+          <div class="contact">
+            <p>
+            </p>
+          </div>
+          <div class="contact">
+            <!-- For booking information please contact  -->
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </body>
 </html>
